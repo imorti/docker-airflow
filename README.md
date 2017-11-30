@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <table>
   <tr>
     <td colspan=2><strong>
@@ -129,7 +129,7 @@ This process is not bad, but there's lots of room for improvement.  A few things
 3.7 This deployment does not ship with celery flower / airflow scheduler capabilities, and thus does not seem to need Redis infrastructure.  Given the rest of the pattern that's already in place though, adding this stuff is almost trivial.  If this interests you see docker-airflow's [example file](https://github.com/puckel/docker-airflow/blob/master/docker-compose-CeleryExecutor.yml) and begin modifying the content of [ansible/airflow.yml](ansible/airflow.yml) to match.
 
 3.8 The project is missing any command-and-control automation for actually doing things with airflow, but apparently [Airflow's RESTful API is experimental anyway](https://airflow.incubator.apache.org/api.html#experimental-rest-api).
-=======
+
 # docker-airflow
 [![CircleCI branch](https://img.shields.io/circleci/project/puckel/docker-airflow/master.svg?maxAge=2592000)](https://circleci.com/gh/puckel/docker-airflow/tree/master)
 [![Docker Build Status](https://img.shields.io/docker/build/puckel/docker-airflow.svg)]()
@@ -220,4 +220,4 @@ This can be used to scale to a multi node setup using docker swarm.
 # Wanna help?
 
 Fork, improve and PR. ;-)
->>>>>>> f0711af85fd373fc03fe892868cabb51305375a4
+
