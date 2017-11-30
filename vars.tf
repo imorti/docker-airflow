@@ -16,7 +16,7 @@ variable "aws_az" {
 variable "deployment_suffix" {
   description = "suffix to apply to names in this deployment (i.e. `-prod`, `-test`, etc)"
   type        = "string"
-  default     = ""
+  default     = "-imorti"
 }
 
 variable "aws_profile" {

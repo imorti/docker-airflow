@@ -1,6 +1,8 @@
 provider "aws" {
   region  = "${var.aws_region}"
   profile = "${var.aws_profile}"
+  access_key = ""
+  secret_key = ""
 }
 
 resource "aws_key_pair" "airflow" {
@@ -10,7 +12,7 @@ resource "aws_key_pair" "airflow" {
 
 resource "aws_instance" "airflow" {
   ami               = "${var.ami}"
-  instance_type     = "t2.micro"
+  instance_type     = "m3.medium"
   monitoring        = true
   availability_zone = "${var.aws_az}"
   key_name          = "${aws_key_pair.airflow.key_name}"
